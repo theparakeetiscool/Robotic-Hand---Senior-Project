@@ -4,6 +4,10 @@ This repository is dedicated to storing the code I wrote for an Arduino UNO duri
 
 If you'd like to use this code you will likely have to change out the pins according to what you're using (and what board you're using)
 
+To utilize the keyboard control in the code, you need some sort of program that can send keystrokes as serial data (Arduino IDE doesn't have this as a feature).
+I personally used coolterm but it's not super important. Unfortunately, doing it this way means that you can't write data to serial while using the serial terminal application
+This is the main reason why encoder data isn't incorporated, because I could not find a good way of displaying it.
+
 Hardware required:
 2 L298N Motor Drivers
 5 N20 DC Motors
